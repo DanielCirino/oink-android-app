@@ -1,0 +1,27 @@
+<resources>
+  <string name="app_name">Oink Finanças Pessoais</string>
+
+  <string-array name="lista_tipo_registro">
+    <item>ENTRADA</item>
+    <item>SAIDA</item>
+    <item>INVESTIMENTO</item>
+    <item>RESERVA</item>
+  </string-array>
+
+  <string-array name="lista_subtipo_registro_entrada">
+    <item>RECEITA_FIXA</item>
+    <item>RECEITA_VARIAVEL</item>
+  </string-array>
+
+  <string-array name="lista_subtipo_registro_saida">
+    <item>RECEITA_FIXA</item>
+    <item>RECEITA_VARIAVEL</item>
+  </string-array>
+
+  <string-array name="lista_subtipo_registro_investimento_reserva">
+    <item>RENDA_FIXA</item>
+    <item>RENDA_VARIAVEL</item>
+    <item>OUTROS</item>
+  </string-array>
+
+</resources>

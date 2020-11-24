@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_marginTop="4dp"
+  >
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:background="@color/current_line">
+
+
+      <ImageView
+        android:id="@+id/iv_imagem_conta_bancaria"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="2dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_chip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/yellow" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_imagem_conta_bancaria"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+          android:id="@+id/tv_nome_conta_bancaria"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:fontFamily="@font/concert_one_regular"
+          android:lines="1"
+          android:text="Nome da conta bancária"
+          android:textColor="@color/pink"
+          android:textSize="22sp"
+          android:textStyle="bold"/>
+
+        <TextView
+          android:id="@+id/tv_dados_bancarios_banco"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="2dp"
+          android:fontFamily="@font/work_sans_regular"
+          android:text="Banco: 341"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+
+          />
+
+        <TextView
+          android:id="@+id/tv_dados_bancarios_agencia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="2dp"
+          android:fontFamily="@font/work_sans_regular"
+          android:text="Ag. 9808"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+
+          />
+
+        <TextView
+          android:id="@+id/tv_dados_bancarios_conta"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="2dp"
+          android:fontFamily="@font/work_sans_regular"
+          android:text="Conta: 15806-2"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+
+          />
+
+        <TextView
+          android:id="@+id/tv_documento_conta_bancaria"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="4dp"
+          android:layout_marginTop="4dp"
+          android:fontFamily="@font/work_sans_regular"
+          android:text="08571100564"
+          android:textColor="@color/white"
+          android:textSize="18sp" />
+
+
+      </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

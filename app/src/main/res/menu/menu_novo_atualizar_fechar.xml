@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/acao_menu_calculo_incluir"
+    android:icon="@drawable/ic_novo_branco"
+    android:title="Novo"
+    app:showAsAction="always" />
+
+
+  <item
+    android:id="@+id/acao_menu_calculo_atualizar"
+    android:icon="@drawable/ic_atualizar_branco"
+    android:title="Atualizar"
+    app:showAsAction="always" />
+
+  <item
+    android:id="@+id/acao_menu_pedido_fechar"
+    android:icon="@drawable/ic_fechar_branco"
+    android:title="Excluir"
+    app:showAsAction="always" />
+</menu>

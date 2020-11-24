@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Registro Financeiro"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_fechar_formulario_registro_financeiro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+      <ImageView
+        android:id="@+id/iv_fechar_formulario_registro_financeiro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_fechar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/work_sans_regular"
+      android:gravity="start"
+      android:text="Informe os dados do registro financeiro"
+      android:textAlignment="textStart"
+      android:textColor="@color/comment"
+      android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_data_movimentacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Data de movimentação"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_data_movimentacao"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_seletor_data"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_data_vencimento_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Data de vencimento"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_data_vencimento_registro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_seletor_data"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_categoria_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Categoria"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_categoria_registro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_caret_para_baixo"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_conta_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Conta"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_conta_registro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_caret_para_baixo"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_forma_pagamento_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Forma de pagamento"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_forma_pagamento_registro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_caret_para_baixo"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+      android:id="@+id/et_valor_registro"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginRight="0dp"
+      android:background="@drawable/bg_textview"
+      android:backgroundTint="@color/current_line"
+      android:inputType="numberDecimal"
+      android:hint="Valor"
+      android:padding="16dp"
+      android:textColor="@color/cyan"
+      android:textColorHint="@color/comment"
+      android:textSize="24sp" />
+
+
+    <EditText
+      android:id="@+id/et_descricao_registro"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginRight="0dp"
+      android:background="@drawable/bg_textview"
+      android:backgroundTint="@color/current_line"
+      android:fontFamily="@font/concert_one_regular"
+      android:hint="Descricão do registro"
+      android:inputType="textAutoComplete"
+      android:minHeight="100dp"
+      android:padding="16dp"
+      android:textColor="@color/white"
+      android:textColorHint="@color/comment"
+      android:textSize="24sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_pote_gasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="Pote de Gasto"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+        android:id="@+id/btn_selecionar_pote_gasto"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_caret_para_baixo"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+      android:id="@+id/btn_salvar_registro_financeiro"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_button"
+      android:backgroundTint="@color/pink"
+      android:fontFamily="@font/concert_one_regular"
+      android:text="Salvar"
+      android:textColor="@color/white"
+      android:textSize="15sp"
+      android:textStyle="bold" />
+  </LinearLayout>
+
+</ScrollView>

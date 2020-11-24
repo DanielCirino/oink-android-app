@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="4dp">
+
+
+      <ImageView
+        android:id="@+id/iv_fechar_selecao_pote_gasto"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_fechar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Tipo de Registro"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_fechar_selecao_pote_gasto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="4dp"
+      android:layout_marginTop="8dp"
+      android:gravity="start"
+      android:text="Selecione um tipo de registro"
+      android:textAlignment="textStart"
+      android:textColor="@color/comment"
+      android:textSize="20sp" />
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_tipo_registro_entrada"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_tipo_registro_entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Entrada"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+        android:id="@+id/iv_indicador_entrada"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_item_selecionado_circulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        app:tint="@color/comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_tipo_registro_saida"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="4dp"
+      android:background="@drawable/bg_textview">
+
+      <TextView
+        android:id="@+id/tv_tipo_registro_saida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/bg_textview"
+        android:enabled="false"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Saída"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/comment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+        android:id="@+id/iv_indicador_saida"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_item_selecionado_circulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        app:tint="@color/comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+      android:id="@+id/btn_confirmar_selecao_tipo_registro"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_button"
+      android:backgroundTint="@color/pink"
+      android:fontFamily="@font/concert_one_regular"
+      android:text="Confirmar"
+      android:textColor="@color/white"
+      android:textSize="15sp"
+      android:textStyle="bold" />
+
+
+  </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
